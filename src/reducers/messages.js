@@ -1,6 +1,13 @@
-import { ADD_MESSAGE } from "../constants/messages";
+import { ADD_MESSAGE } from '../constants/messages';
 
-const messages = (state = [], action) => {
+const defaultState = [
+  {
+    id: -1,
+    text: 'hello toto'
+  }
+];
+
+const messages = (state = defaultState, action) => {
   switch (action.type) {
     case ADD_MESSAGE:
       return [

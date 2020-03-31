@@ -1,11 +1,11 @@
-import React from "react";
-import { Provider } from "react-redux";
-import Messages from "./Messages";
-import "antd/dist/antd.css";
+import React from 'react';
+import { Provider } from 'react-redux';
+import Messages from './Messages';
+import 'antd/dist/antd.css';
 
-export default function Root(props) {
+export default function Root({ store }) {
   return (
-    <Provider store={props.store}>
+    <Provider store={store}>
       <Messages />
     </Provider>
   );
